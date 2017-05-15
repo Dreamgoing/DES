@@ -53,10 +53,9 @@ private:
 public:
 
 
-    static bitset<SIZE::BLOCK> encrypt(const bitset<SIZE::BLOCK> &in,const bitset<SIZE::BLOCK>& key);
+    static bitset<SIZE::BLOCK> encrypt(const bitset<SIZE::BLOCK> &in, const bitset<SIZE::BLOCK> &key);
 
-    static bitset<SIZE::BLOCK> decrypt(const bitset<SIZE::BLOCK> &in,const bitset<SIZE::BLOCK>& key);
-
+    static bitset<SIZE::BLOCK> decrypt(const bitset<SIZE::BLOCK> &in, const bitset<SIZE::BLOCK> &key);
 
 
     ///设置64位
@@ -64,6 +63,7 @@ public:
 
 private:
     static char bit4ToChar(const bitset<4> bit4);
+
     ///@brief 将输入的input经过IP变换分为左右两个部分
     static void ip(const bitset<SIZE::BLOCK> &input, bitset<SIZE::HALF_BLOCK> &l, bitset<SIZE::HALF_BLOCK> &r);
 
@@ -73,17 +73,18 @@ private:
     static bitset<SIZE::HALF_BLOCK> f(bitset<SIZE::HALF_BLOCK> &in, const bitset<SIZE::CODE> &key);
 
     ///@brief 密钥置换
-    static void keyTurn(const bitset<SIZE::BLOCK> &key,bitset<SIZE::HALF_KEY> &l,bitset<SIZE::HALF_KEY>& r);
+    static void keyTurn(const bitset<SIZE::BLOCK> &key, bitset<SIZE::HALF_KEY> &l, bitset<SIZE::HALF_KEY> &r);
 
     ///@brief 循环左移操作
 
-    static void leftMove(bitset<SIZE::HALF_KEY>& l,bitset<SIZE::HALF_KEY>& r,int step);
+    static void leftMove(bitset<SIZE::HALF_KEY> &l, bitset<SIZE::HALF_KEY> &r, int step);
 
-    static void compressKey(const bitset<SIZE::HALF_KEY>& l,const bitset<SIZE::HALF_KEY>& r,bitset<SIZE::CODE> resKey);
+    static void
+    compressKey(const bitset<SIZE::HALF_KEY> &l, const bitset<SIZE::HALF_KEY> &r, bitset<SIZE::CODE> resKey);
 
-    static void finalIp(bitset<SIZE::HALF_BLOCK>& l,bitset<SIZE::HALF_BLOCK>& r,bitset<SIZE::BLOCK>& res);
+    static void finalIp(bitset<SIZE::HALF_BLOCK> &l, bitset<SIZE::HALF_BLOCK> &r, bitset<SIZE::BLOCK> &res);
 
-    static bitset<SIZE::CODE> getKey(int step,const bitset<SIZE::BLOCK> key);
+    static bitset<SIZE::CODE> getKey(int step, const bitset<SIZE::BLOCK> key);
 
 };
 
@@ -135,7 +136,7 @@ const int DES::pc2Table[48] = {
 };
 
 const char DES::bitTable[16] = {
-        '0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'
 };
 const int DES::sTable[8][64] = {
         {//S1
@@ -224,7 +225,7 @@ void DES::turnLR(bitset<SIZE::HALF_BLOCK> &l, bitset<SIZE::HALF_BLOCK> &r, const
         row[1] = er[6 * i + 5];
 
         for (int j = 0; j < 4; j++) {
-            col[j] = er[6*i + 1 + j];
+            col[j] = er[6 * i + 1 + j];
         }
 
         ///将6位转化为4位
@@ -296,12 +297,12 @@ bitset<DES::SIZE::HALF_BLOCK> DES::f(bitset<SIZE::HALF_BLOCK> &in, const bitset<
 
 
 void DES::keyTurn(const bitset<SIZE::BLOCK> &key, bitset<SIZE::HALF_KEY> &l, bitset<SIZE::HALF_KEY> &r) {
-    for(int i = 0;i<r.size();i++){
-        r[i] = key[pc1Table[i]-1];
+    for (int i = 0; i < r.size(); i++) {
+        r[i] = key[pc1Table[i] - 1];
     }
 
-    for (int i = 0;i<l.size() ;i++) {
-        l[i] = key[pc1Table[i+l.size()]-1];
+    for (int i = 0; i < l.size(); i++) {
+        l[i] = key[pc1Table[i + l.size()] - 1];
     }
 
 }
@@ -309,76 +310,77 @@ void DES::keyTurn(const bitset<SIZE::BLOCK> &key, bitset<SIZE::HALF_KEY> &l, bit
 void DES::leftMove(bitset<SIZE::HALF_KEY> &l, bitset<SIZE::HALF_KEY> &r, int step) {
 
     ///@param step 层数 1~16
-    int move = leftShift[step-1];
+    int move = leftShift[step - 1];
 
-    l<<=move;
-    r<<=move;
+    l <<= move;
+    r <<= move;
 }
 
 void DES::compressKey(const bitset<SIZE::HALF_KEY> &l, const bitset<SIZE::HALF_KEY> &r, bitset<SIZE::CODE> resKey) {
 
     bitset<SIZE::KEY> tmp;
     ///合并
-    for(int i = 0;i<r.size();i++){
+    for (int i = 0; i < r.size(); i++) {
         tmp[i] = r[i];
     }
-    for(int i = 0;i<l.size();i++){
-        tmp[i+l.size()] = l[i];
+    for (int i = 0; i < l.size(); i++) {
+        tmp[i + l.size()] = l[i];
     }
 
     ///进行压缩置换
-    for(int i = 0;i<resKey.size();i++){
-        resKey[i] = tmp[pc2Table[i]-1];
+    for (int i = 0; i < resKey.size(); i++) {
+        resKey[i] = tmp[pc2Table[i] - 1];
     }
 }
 
-bitset<DES::SIZE::BLOCK> DES::encrypt(const bitset<SIZE::BLOCK> &in,const bitset<SIZE::BLOCK> &key) {
-    bitset<SIZE::HALF_KEY> keyl,keyr;
-    bitset<SIZE::HALF_BLOCK> l,r;
+bitset<DES::SIZE::BLOCK> DES::encrypt(const bitset<SIZE::BLOCK> &in, const bitset<SIZE::BLOCK> &key) {
+    bitset<SIZE::HALF_KEY> keyl, keyr;
+    bitset<SIZE::HALF_BLOCK> l, r;
     bitset<SIZE::CODE> keynth;
     bitset<SIZE::BLOCK> res;
 
-    ip(in,l,r);
-    for(int i = 1;i<=16;i++){
-        keynth = getKey(i,key);
+    ip(in, l, r);
+    for (int i = 1; i <= 16; i++) {
+        keynth = getKey(i, key);
 //        cout<<keynth.to_ulong()<<endl;
-        turnLR(l,r,keynth);
-        if(i==16){
-            swap(l,r);
+        turnLR(l, r, keynth);
+        if (i == 16) {
+            swap(l, r);
         }
     }
-    finalIp(l,r,res);
+    finalIp(l, r, res);
     return res;
 }
 
 bitset<DES::SIZE::BLOCK> DES::decrypt(const bitset<SIZE::BLOCK> &in, const bitset<SIZE::BLOCK> &key) {
 //    bitset<SIZE::HALF_KEY> keyl,keyr;
-    bitset<SIZE::HALF_BLOCK> l,r;
+    bitset<SIZE::HALF_BLOCK> l, r;
     bitset<SIZE::CODE> keynth;
     bitset<SIZE::BLOCK> res;
 
-    ip(in,l,r);
+    ip(in, l, r);
 //    keyTurn(key,keyl,keyr);
-    for(int i = 16;i>=1;i--){
-        keynth = getKey(i,key);
+    for (int i = 16; i >= 1; i--) {
+        keynth = getKey(i, key);
 
 //        cout<<i<<": "<<keynth.to_ulong()<<endl;
-        turnLR(l,r,keynth);
-        if(i==1){
-            swap(l,r);
+        turnLR(l, r, keynth);
+        if (i == 1) {
+            swap(l, r);
         }
     }
-    finalIp(l,r,res);
+    finalIp(l, r, res);
     return res;
 }
+
 void DES::finalIp(bitset<SIZE::HALF_BLOCK> &l, bitset<SIZE::HALF_BLOCK> &r, bitset<SIZE::BLOCK> &res) {
 
     bitset<SIZE::BLOCK> tmp;
-    for(int i = 0;i<res.size();i++){
-        if(ppTable[i]<=32){
-            res[i] = r[ppTable[i]-1];
-        } else{
-            res[i] = l[ppTable[i]-32-1];
+    for (int i = 0; i < res.size(); i++) {
+        if (ppTable[i] <= 32) {
+            res[i] = r[ppTable[i] - 1];
+        } else {
+            res[i] = l[ppTable[i] - 32 - 1];
         }
     }
 
@@ -387,38 +389,38 @@ void DES::finalIp(bitset<SIZE::HALF_BLOCK> &l, bitset<SIZE::HALF_BLOCK> &r, bits
 bitset<DES::SIZE::CODE> DES::getKey(int step, const bitset<SIZE::BLOCK> key) {
     ///step 0~15
     bitset<SIZE::CODE> res;
-    int n = step-1;
+    int n = step - 1;
 
     ///56bit
     bitset<SIZE::KEY> kkey;
-    size_t klen = key.size() , rlen = res.size() ;//分别为56和48
+    size_t klen = key.size(), rlen = res.size();//分别为56和48
 
     ///ipc1
-    for(int i = 0;i<kkey.size();i++){
-        kkey[i] = key[pc1Table[i]-1];
+    for (int i = 0; i < kkey.size(); i++) {
+        kkey[i] = key[pc1Table[i] - 1];
     }
 
     ///循环移位
-    for(int i = 0;i<=n;i++){
-        for(int j = 0;j<leftShift[i];j++){
+    for (int i = 0; i <= n; i++) {
+        for (int j = 0; j < leftShift[i]; j++) {
             ///将密钥循环位暂存在res中
-            res[rlen-leftShift[i]+j] = kkey[klen-leftShift[i]+j];
-            res[rlen/2-leftShift[i]+j] = kkey[klen/2-leftShift[i]+j];
+            res[rlen - leftShift[i] + j] = kkey[klen - leftShift[i] + j];
+            res[rlen / 2 - leftShift[i] + j] = kkey[klen / 2 - leftShift[i] + j];
         }
 
         ///移位
-        kkey<<=leftShift[i];
+        kkey <<= leftShift[i];
 
         ///写回
-        for(int j = 0;j<leftShift[i];j++){
-            kkey[klen/2+j] = res[rlen-leftShift[i]+j];
-            kkey[j] = res[rlen/2-leftShift[i]+j];
+        for (int j = 0; j < leftShift[i]; j++) {
+            kkey[klen / 2 + j] = res[rlen - leftShift[i] + j];
+            kkey[j] = res[rlen / 2 - leftShift[i] + j];
         }
     }
 
     ///压缩置换
-    for(int i = 0;i<res.size();i++){
-        res[i] = kkey[pc2Table[i]-1];
+    for (int i = 0; i < res.size(); i++) {
+        res[i] = kkey[pc2Table[i] - 1];
     }
     return res;
 }
@@ -426,14 +428,14 @@ bitset<DES::SIZE::CODE> DES::getKey(int step, const bitset<SIZE::BLOCK> key) {
 string DES::toString(const bitset<SIZE::BLOCK> block) {
     string res;
     res.clear();
-    for(int i = 0;i<block.size()/4;i++){
+    for (int i = 0; i < block.size() / 4; i++) {
         bitset<4> hexBit;
-        for(int j = 0;j<4;j++){
-            hexBit[j] = block[4*i+j];
+        for (int j = 0; j < 4; j++) {
+            hexBit[j] = block[4 * i + j];
         }
-        res+=bit4ToChar(hexBit);
+        res += bit4ToChar(hexBit);
     }
-    reverse(res.begin(),res.end());
+    reverse(res.begin(), res.end());
     return res;
 
 }

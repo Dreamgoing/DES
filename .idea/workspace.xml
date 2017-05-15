@@ -11,9 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cedd7529-3bbb-4447-9101-11d4a8a780c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/input4.txt" />
+    <list default="true" id="cedd7529-3bbb-4447-9101-11d4a8a780c4" name="Default" comment="add test case">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DES.hpp" afterPath="$PROJECT_DIR$/src/DES.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fileDES.hpp" afterPath="$PROJECT_DIR$/src/fileDES.hpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,22 +43,34 @@
       <file leaf-file-name="fileDES.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fileDES.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="232" column="28" lean-forward="false" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
+            <state relative-caret-position="270">
+              <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding>
                 <element signature="e#86#105#0" expanded="true" />
-                <element signature="e#288#1065#1" expanded="false" />
-                <element signature="e#1068#1417#0" expanded="false" />
-                <element signature="e#1419#2151#0" expanded="false" />
-                <element signature="e#2153#3387#0" expanded="false" />
-                <element signature="e#3389#3467#0" expanded="false" />
-                <element signature="e#3469#3689#0" expanded="false" />
-                <element signature="e#3691#3783#0" expanded="false" />
-                <element signature="e#3785#4057#0" expanded="false" />
-                <element signature="e#4059#4300#0" expanded="false" />
-                <element signature="e#4302#4399#0" expanded="false" />
-                <element signature="e#4401#4887#0" expanded="false" />
-                <element signature="e#4889#5907#0" expanded="false" />
+                <element signature="e#288#1073#1" expanded="false" />
+                <element signature="e#1076#1434#0" expanded="false" />
+                <element signature="e#1436#2177#0" expanded="false" />
+                <element signature="e#2179#3433#0" expanded="false" />
+                <element signature="e#3435#3513#0" expanded="false" />
+                <element signature="e#3515#3745#0" expanded="false" />
+                <element signature="e#3747#3839#0" expanded="false" />
+                <element signature="e#3841#4121#0" expanded="false" />
+                <element signature="e#4123#4388#0" expanded="false" />
+                <element signature="e#4390#4490#0" expanded="false" />
+                <element signature="e#4492#4984#0" expanded="false" />
+                <element signature="e#4986#6027#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DES.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DES.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="374" column="0" lean-forward="true" selection-start-line="374" selection-start-column="0" selection-end-line="374" selection-end-column="0" />
+              <folding>
+                <element signature="e#78#95#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input4.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="input4.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/input4.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
+            <state relative-caret-position="367">
               <caret line="57" column="56" lean-forward="false" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
               <folding />
             </state>
@@ -113,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state relative-caret-position="256">
+              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#858#1045#0" expanded="true" />
@@ -149,12 +162,13 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/fileDES.hpp" />
         <option value="$PROJECT_DIR$/data/input1.txt" />
-        <option value="$PROJECT_DIR$/test/main.cpp" />
-        <option value="$PROJECT_DIR$/src/fileDES.hpp" />
         <option value="$PROJECT_DIR$/data/input.txt" />
         <option value="$PROJECT_DIR$/data/result.txt" />
         <option value="$PROJECT_DIR$/data/input3.txt" />
         <option value="$PROJECT_DIR$/data/input4.txt" />
+        <option value="$PROJECT_DIR$/src/fileDES.hpp" />
+        <option value="$PROJECT_DIR$/src/DES.hpp" />
+        <option value="$PROJECT_DIR$/test/main.cpp" />
       </list>
     </option>
   </component>
@@ -193,6 +207,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DES" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,7 +494,7 @@
       <workItem from="1494562515781" duration="4202000" />
       <workItem from="1494769218424" duration="153000" />
       <workItem from="1494827697588" duration="7683000" />
-      <workItem from="1494857072587" duration="10453000" />
+      <workItem from="1494857072587" duration="10544000" />
     </task>
     <task id="LOCAL-00001" summary="add test case">
       <created>1494868719125</created>
@@ -475,11 +503,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494868719125</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add test case">
+      <created>1494868771149</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1494868771150</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37582000" />
+    <option name="totallyTimeSpent" value="37673000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -578,18 +613,18 @@
           <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding>
             <element signature="e#86#105#0" expanded="true" />
-            <element signature="e#288#1065#1" expanded="false" />
-            <element signature="e#1068#1417#0" expanded="false" />
-            <element signature="e#1419#2151#0" expanded="false" />
-            <element signature="e#2153#3387#0" expanded="false" />
-            <element signature="e#3389#3467#0" expanded="false" />
-            <element signature="e#3469#3689#0" expanded="false" />
-            <element signature="e#3691#3783#0" expanded="false" />
-            <element signature="e#3785#4057#0" expanded="false" />
-            <element signature="e#4059#4300#0" expanded="false" />
-            <element signature="e#4302#4399#0" expanded="false" />
-            <element signature="e#4401#4887#0" expanded="false" />
-            <element signature="e#4889#5907#0" expanded="false" />
+            <element signature="e#288#1073#1" expanded="false" />
+            <element signature="e#1076#1434#0" expanded="false" />
+            <element signature="e#1436#2177#0" expanded="false" />
+            <element signature="e#2179#3433#0" expanded="false" />
+            <element signature="e#3435#3513#0" expanded="false" />
+            <element signature="e#3515#3745#0" expanded="false" />
+            <element signature="e#3747#3839#0" expanded="false" />
+            <element signature="e#3841#4121#0" expanded="false" />
+            <element signature="e#4123#4388#0" expanded="false" />
+            <element signature="e#4390#4490#0" expanded="false" />
+            <element signature="e#4492#4984#0" expanded="false" />
+            <element signature="e#4986#6027#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -748,27 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DES.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="367" column="21" lean-forward="false" selection-start-line="367" selection-start-column="21" selection-end-line="367" selection-end-column="21" />
-          <folding>
-            <element signature="e#78#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#858#1045#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -793,28 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fileDES.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="232" column="28" lean-forward="false" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
-          <folding>
-            <element signature="e#86#105#0" expanded="true" />
-            <element signature="e#288#1065#1" expanded="false" />
-            <element signature="e#1068#1417#0" expanded="false" />
-            <element signature="e#1419#2151#0" expanded="false" />
-            <element signature="e#2153#3387#0" expanded="false" />
-            <element signature="e#3389#3467#0" expanded="false" />
-            <element signature="e#3469#3689#0" expanded="false" />
-            <element signature="e#3691#3783#0" expanded="false" />
-            <element signature="e#3785#4057#0" expanded="false" />
-            <element signature="e#4059#4300#0" expanded="false" />
-            <element signature="e#4302#4399#0" expanded="false" />
-            <element signature="e#4401#4887#0" expanded="false" />
-            <element signature="e#4889#5907#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/input1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -833,9 +825,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/input4.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
+        <state relative-caret-position="367">
           <caret line="57" column="56" lean-forward="false" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fileDES.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#86#105#0" expanded="true" />
+            <element signature="e#288#1073#1" expanded="false" />
+            <element signature="e#1076#1434#0" expanded="false" />
+            <element signature="e#1436#2177#0" expanded="false" />
+            <element signature="e#2179#3433#0" expanded="false" />
+            <element signature="e#3435#3513#0" expanded="false" />
+            <element signature="e#3515#3745#0" expanded="false" />
+            <element signature="e#3747#3839#0" expanded="false" />
+            <element signature="e#3841#4121#0" expanded="false" />
+            <element signature="e#4123#4388#0" expanded="false" />
+            <element signature="e#4390#4490#0" expanded="false" />
+            <element signature="e#4492#4984#0" expanded="false" />
+            <element signature="e#4986#6027#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DES.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="374" column="0" lean-forward="true" selection-start-line="374" selection-start-column="0" selection-end-line="374" selection-end-column="0" />
+          <folding>
+            <element signature="e#78#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#858#1045#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
