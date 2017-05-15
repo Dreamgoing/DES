@@ -1,0 +1,9 @@
+With the increasing popularity of container technologies and microservices,
+a number of challenges have arisen around service discovery and scale.
+The separation principles of microservices, when applied to a fresh application at low scale,
+would be considered by many to be overengineering at its finest. Solving these challenges at an early,
+prototyping stage could mean a costly investment at a fragile stage of a project.
+
+hello world
+
+jadfjas;kdfjas;ldfj
