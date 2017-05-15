@@ -12,8 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cedd7529-3bbb-4447-9101-11d4a8a780c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/input3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/input4.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -84,11 +83,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input3.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="input3.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/input3.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input4.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/input4.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="855">
+              <caret line="57" column="56" lean-forward="false" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -145,6 +154,7 @@
         <option value="$PROJECT_DIR$/data/input.txt" />
         <option value="$PROJECT_DIR$/data/result.txt" />
         <option value="$PROJECT_DIR$/data/input3.txt" />
+        <option value="$PROJECT_DIR$/data/input4.txt" />
       </list>
     </option>
   </component>
@@ -456,12 +466,20 @@
       <workItem from="1494562515781" duration="4202000" />
       <workItem from="1494769218424" duration="153000" />
       <workItem from="1494827697588" duration="7683000" />
-      <workItem from="1494857072587" duration="10394000" />
+      <workItem from="1494857072587" duration="10453000" />
     </task>
+    <task id="LOCAL-00001" summary="add test case">
+      <created>1494868719125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1494868719125</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37523000" />
+    <option name="totallyTimeSpent" value="37582000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -507,6 +525,8 @@
     <ignored-roots>
       <path value="$USER_HOME$" />
     </ignored-roots>
+    <MESSAGE value="add test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -807,6 +827,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/input4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="56" lean-forward="false" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,58 @@
+15-440 Assignments
+15-440 Home Syllabus Assignments Exams Announcements
+There will be three programming projects and three written homework assignments.
+
+Topic	Assigned	Due	Other Info	Solutions
+Project 0: Implementing a Multi-Client Echo Server	Th 1/23	Th 1/30	View on GitHub
+Project 1: Distributed Bitcoin Miner	Th 2/6	Mon 2/24 (part A) & Mon 3/3 (part B)	View on GitHub
+Project 2: Tribbler	Fri 3/21	Mon 4/7	View on GitHub
+Project 3: Design Your Own Distributed System	Tue 4/8	Tue 4/15 (proposal) & Th 5/1 (final)
+Extra Credit Studying: Last Year's Final - hand at the beginning of this year's final for extra credit on the exam portion of the course.	Tue 4/22	5/5 (start of final exam)
+The first two projects are to be done individually. The last two projects will be done in groups of two students.
+
+The later projects are done in groups for two reasons. The first is the size of the class is very large. The second and more important reason is that this is an opportunity to experience the joys and frustrations of working with others. It's a skill you only get better at with practice.
+
+Since 15-440 fulfills the project-class requirement of the CS degree, you will be expected to learn and practice good software engineering, as well as demonstrate mastery of the networking concepts. Both partners in a project group will need to fully understand the project and your solution in order to do well on those exam questions relating to the projects. For example, a typical question might be: "When you implemented X, you came across a particular situation Y that required some care. Explain why this simple solution Z doesn't work and describe how you solved it." We'll pick questions such that it will take some effort to figure out Y. If you didn't take the time to work the problem yourself and just relied on your partner, you won't have enough time during the test to figure it out. Be careful, the insights you'll need will come only from actually solving the problem as opposed to just seeing the solution.
+
+Programming in Go
+
+This term we will be doing all of our programming in Go, a language developed at Google, but now part of an open source project. We believe that Go is an especially suitable language for writing distributed systems for the following reasons:
+
+The language is type-safe and garbage collected, avoiding many of the pitfalls of lower-level languages, such as C and C++.
+Many useful data structures are built into the language, such as resizable arrays and dictionaries.
+There is a large collection of packages providing access to useful system resources.
+Go supports a model of concurrency that is cleaner and more abstract than traditional mechanisms, such as Pthreads and Java threads.
+Go is available on the Andrew Linux machines, including those in the GHC third-floor cluster as /usr/local/bin, with the libraries and documentation in /usr/local/lib/go. Because Go is installed on Andrew machines in a custom location, you will need to set the GOROOT environment variable as well. If you use bash (you can execute ps -p to find out what shell you are using), you can add the following line in your $HOME/.bashrc file:
+
+export GOROOT=/usr/local/lib/go
+If you use csh or tcsh, you can add the following line to your .cshrc file:
+
+setenv GOROOT /usr/local/lib/go
+The standard means for maintaining a set of go programs is to have a single directory, named go with subdirectories src (for source code), pkg (for compiled libraries), and bin (for executable binaries). In order to build/compile your Go code for each project, you will need to set the GOPATH environment variable to the project's root directory. For project 0, for example, the GOPATH environment variable can be set by adding the following line of code to your $HOME/.bashrc (assuming you are using bash and that you have copied the p0 project directory into your home directory):
+
+export GOPATH=$HOME/p0
+If you use csh or tcsh, you can add the following line to your .cshrc file:
+
+setenv GOPATH $HOME/p0
+Note that the GOPATH will need to be update for each new project we release, so don't forget to update it when beginning a new project!
+
+Lastly, you can check out the relevant Go-related posts on Piazza for helpful resources and specific installation instructions.
+
+General Notes on the Programming Projects
+
+A key objective of this course is to provide a significant experience with system programming, where you must write programs that are robust and that must integrate with a large, installed software base. Oftentimes, these programs are the ones that other people will build upon or use as tools. Systems programming is very different from the application program development you have done in earlier courses:
+
+Although it was historically done in a low-level language, such as C, to ensure close control over system resources, it is now increasingly common to see systems written using type-safe languages with dynamically-allocated data structures, such as Java and Go, to increase reliability and to reduce the vulnerability to attacks, such as buffer-overflow exploits.
+Especially with server code, it must be designed to run indefinitely. It must handle reliably handle every possible error condition, and it must manage resources such as memory with care.
+It must be secure. Connecting a system to a network makes it vulnerable to malicious attacks initiated anywhere in the world. Poorly designed or implemented network software provides a common entry point for attack. System software must be invulnerable to flaws such as string overflows or malformed incoming messages. (This point bears repeating: Any system software must stringently check input it receives from the network or from the user. Do not trust either one! They're often out to get you.)
+The interfaces to other parts of the system are generally specified by documented protocols.
+Distributed systems nearly always involve concurrency, both within individual machines (multiple processes or threads) as well as among the different network components.
+An important part of system programming is to develop comprehensive test methods for the programs. A significant effort should be invested in writing programs that will thoroughly test the system code, including the handling of different error conditions.
+Finally, please note that by design, the projects do not always specify every corner case bit of behavior or every design decision you may have to make. A major challenge in implementing real systems is in making the leap from a specification that is often slightly incomplete to a real-world implementation. Don't get frustrated—our grading will not dock you for making reasonable design decisions! We suggest three general guidelines to follow:
+
+Be conservative in what you do, be liberal in what you accept from others.. This is the design guideline underlying many Internet services, first uttered as a robustness principle by Jon Postel in the first TCP RFC, RFC 793.
+Browse the newsgroup and FAQ, ask the course staff!
+Make a reasonable design decision and document it. In a perfect world, all aspects of a design would be completely specified, but most real-world, large, complex systems do not achieve this goal. You will often hear the course staff reply: You may pick either alternative as long as your server does not crash. This advice applies particularly to error handling, where there are a nearly infinite number of possible errors with partially-specified error responses. The goal of the course is to gain experience with creating large systems; we don't expect students to be psychic, merely to exercise good judgement about creating a robust and usable system.
+Please keep in mind: The programming assignments are larger and more open-ended than in other courses. Doing a good job on the project requires more than just producing code that runs: it should have a good overall organization, be well implemented and documented, and be thoroughly tested.
+
+Last updated: 2014-04-30 15:42:04 -0400 [validate xhtml]
