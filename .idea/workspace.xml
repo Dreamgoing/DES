@@ -11,10 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cedd7529-3bbb-4447-9101-11d4a8a780c4" name="Default" comment="add test case">
+    <list default="true" id="cedd7529-3bbb-4447-9101-11d4a8a780c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DES.hpp" afterPath="$PROJECT_DIR$/src/DES.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fileDES.hpp" afterPath="$PROJECT_DIR$/src/fileDES.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/main.cpp" afterPath="$PROJECT_DIR$/test/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -130,10 +129,10 @@
         <entry file="file://$PROJECT_DIR$/test/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
-              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <element signature="e#858#1045#0" expanded="true" />
+                <element signature="e#896#1083#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -494,7 +493,7 @@
       <workItem from="1494562515781" duration="4202000" />
       <workItem from="1494769218424" duration="153000" />
       <workItem from="1494827697588" duration="7683000" />
-      <workItem from="1494857072587" duration="10544000" />
+      <workItem from="1494857072587" duration="10585000" />
     </task>
     <task id="LOCAL-00001" summary="add test case">
       <created>1494868719125</created>
@@ -510,11 +509,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494868771150</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="format code">
+      <created>1494868880212</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1494868880212</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37673000" />
+    <option name="totallyTimeSpent" value="37714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,7 +567,8 @@
       <path value="$USER_HOME$" />
     </ignored-roots>
     <MESSAGE value="add test case" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test case" />
+    <MESSAGE value="format code" />
+    <option name="LAST_COMMIT_MESSAGE" value="format code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -594,7 +601,7 @@
           <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#858#1045#0" expanded="true" />
+            <element signature="e#896#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -643,7 +650,7 @@
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#858#1045#0" expanded="true" />
+            <element signature="e#896#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -672,7 +679,7 @@
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#858#1045#0" expanded="true" />
+            <element signature="e#896#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -701,7 +708,7 @@
           <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#858#1045#0" expanded="true" />
+            <element signature="e#896#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,7 +737,7 @@
           <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#858#1045#0" expanded="true" />
+            <element signature="e#896#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -759,7 +766,7 @@
           <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#858#1045#0" expanded="true" />
+            <element signature="e#896#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -866,10 +873,10 @@
     <entry file="file://$PROJECT_DIR$/test/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#858#1045#0" expanded="true" />
+            <element signature="e#896#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
