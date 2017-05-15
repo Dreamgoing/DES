@@ -11,9 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cedd7529-3bbb-4447-9101-11d4a8a780c4" name="Default" comment="format code">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+    <list default="true" id="cedd7529-3bbb-4447-9101-11d4a8a780c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -142,8 +142,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="90">
-                <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <first_editor relative-caret-position="15">
+                <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -507,7 +507,7 @@
       <workItem from="1494562515781" duration="4202000" />
       <workItem from="1494769218424" duration="153000" />
       <workItem from="1494827697588" duration="7683000" />
-      <workItem from="1494857072587" duration="10662000" />
+      <workItem from="1494857072587" duration="10752000" />
     </task>
     <task id="LOCAL-00001" summary="add test case">
       <created>1494868719125</created>
@@ -537,11 +537,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494868906480</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add readme">
+      <created>1494868985110</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1494868985110</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37791000" />
+    <option name="totallyTimeSpent" value="37881000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,7 +596,8 @@
     </ignored-roots>
     <MESSAGE value="add test case" />
     <MESSAGE value="format code" />
-    <option name="LAST_COMMIT_MESSAGE" value="format code" />
+    <MESSAGE value="add readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="add readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -905,8 +913,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
             <folding />
           </first_editor>
           <second_editor />
