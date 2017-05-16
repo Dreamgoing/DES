@@ -10,6 +10,8 @@ DES encrypt algorithm is Symmetric encryption.DES encryption library using c++ i
 
 
 ## How to use
+>DES.hpp & fileDES.hpp in src dictionary
+
 + __include"DES.hpp"__   Original encrypt library
 + __include"fileDES.hpp__"   File encrypt library 
 
