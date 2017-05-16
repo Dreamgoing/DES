@@ -30,7 +30,18 @@ DES encrypt algorithm is Symmetric encryption.DES encryption library using c++ i
 
 ### fileDES:public function
 + __setInput__
-	- @param: 
+	- @brief: set input filepath and open it
+	- @param: filepath(string)
+	- @return: void
++ __setOutput__
+	- @brief: set output filepath and mode and open it
+	- @param: filepath(string), mode = 0 encrypt,mode = 1 decrypt.
+	- @return: void
+
++ __setKey__
+	-
+	- @param
+
 
 
 
