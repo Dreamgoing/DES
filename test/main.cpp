@@ -94,6 +94,17 @@ void testIfstream() {
     }
 }
 
+void useFileDES(){
+
+//    FileDES des;
+//    des.setInput("../data/input.txt"); ///your input file path
+//    des.setOutput("../data/encrypt.txt",0); ///your encrypt output file path
+//    des.setKey("123456"); ///your key
+//    des.encryptFile(); ///encrypt file
+//    des.setOutput("../data/decrypt.txt",1); ///your decrypt output file path
+//    des.decryptFile(); ///decrypt file
+};
+
 int main() {
 
 //    cout<< sizeof(uint64_t)<<endl;
