@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /Users/wangruoxuan/ClionProjects/DES
 CMAKE_BINARY_DIR = /Users/wangruoxuan/ClionProjects/DES/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/qtDES.dir
+
+# All Build rule for target.
+CMakeFiles/qtDES.dir/all:
+	$(MAKE) -f CMakeFiles/qtDES.dir/build.make CMakeFiles/qtDES.dir/depend
+	$(MAKE) -f CMakeFiles/qtDES.dir/build.make CMakeFiles/qtDES.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangruoxuan/ClionProjects/DES/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target qtDES"
+.PHONY : CMakeFiles/qtDES.dir/all
+
+# Include target in all.
+all: CMakeFiles/qtDES.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/qtDES.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruoxuan/ClionProjects/DES/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/qtDES.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruoxuan/ClionProjects/DES/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/qtDES.dir/rule
+
+# Convenience name for target.
+qtDES: CMakeFiles/qtDES.dir/rule
+
+.PHONY : qtDES
+
+# clean rule for target.
+CMakeFiles/qtDES.dir/clean:
+	$(MAKE) -f CMakeFiles/qtDES.dir/build.make CMakeFiles/qtDES.dir/clean
+.PHONY : CMakeFiles/qtDES.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/qtDES.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/DES.dir
 
 # All Build rule for target.

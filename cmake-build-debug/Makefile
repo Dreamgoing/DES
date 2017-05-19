@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named qtDES
+
+# Build rule for target.
+qtDES: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 qtDES
+.PHONY : qtDES
+
+# fast build rule for target.
+qtDES/fast:
+	$(MAKE) -f CMakeFiles/qtDES.dir/build.make CMakeFiles/qtDES.dir/build
+.PHONY : qtDES/fast
+
+#=============================================================================
 # Target rules for targets named DES
 
 # Build rule for target.
@@ -129,6 +142,7 @@ test/main.o: test/main.cpp.o
 
 # target to build an object file
 test/main.cpp.o:
+	$(MAKE) -f CMakeFiles/qtDES.dir/build.make CMakeFiles/qtDES.dir/test/main.cpp.o
 	$(MAKE) -f CMakeFiles/DES.dir/build.make CMakeFiles/DES.dir/test/main.cpp.o
 .PHONY : test/main.cpp.o
 
@@ -138,6 +152,7 @@ test/main.i: test/main.cpp.i
 
 # target to preprocess a source file
 test/main.cpp.i:
+	$(MAKE) -f CMakeFiles/qtDES.dir/build.make CMakeFiles/qtDES.dir/test/main.cpp.i
 	$(MAKE) -f CMakeFiles/DES.dir/build.make CMakeFiles/DES.dir/test/main.cpp.i
 .PHONY : test/main.cpp.i
 
@@ -147,6 +162,7 @@ test/main.s: test/main.cpp.s
 
 # target to generate assembly for a file
 test/main.cpp.s:
+	$(MAKE) -f CMakeFiles/qtDES.dir/build.make CMakeFiles/qtDES.dir/test/main.cpp.s
 	$(MAKE) -f CMakeFiles/DES.dir/build.make CMakeFiles/DES.dir/test/main.cpp.s
 .PHONY : test/main.cpp.s
 
@@ -158,6 +174,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... qtDES"
 	@echo "... DES"
 	@echo "... test/main.o"
 	@echo "... test/main.i"

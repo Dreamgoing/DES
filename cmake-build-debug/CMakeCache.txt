@@ -195,6 +195,18 @@ DES_SOURCE_DIR:STATIC=/Users/wangruoxuan/ClionProjects/DES
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=/usr/local/Cellar/qt5/5.6.1-1/lib/cmake/Qt5Core
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=/usr/local/Cellar/qt5/5.6.1-1/lib/cmake/Qt5Gui
+
+//The directory containing a CMake configuration file for Qt5UiTools.
+Qt5UiTools_DIR:PATH=/usr/local/Cellar/qt5/5.6.1-1/lib/cmake/Qt5UiTools
+
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=/usr/local/Cellar/qt5/5.6.1-1/lib/cmake/Qt5Widgets
+
 
 ########################
 # INTERNAL cache entries

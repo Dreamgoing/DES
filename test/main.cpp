@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../src/DES.hpp"
 #include "../src/fileDES.hpp"
+
 #include <bitset>
 #include <cstdio>
 
@@ -35,17 +36,20 @@ void show(bitset<64> in) {
 
 void testEncrypt() {
 
-    bitset<64> in(0x1122134455667781);
+    bitset<64> in(0x1234567890abcdef);
 
 //    cout<<in.size()<<endl;
 //    printf("%X\n", in.to_ulong());
 
-    bitset<64> key(0x1234567812345678);
+    bitset<64> key(0x111111111111111);
 
     auto res = DES::encrypt(in, key);
 
+    cout<<DES::toString(res)<<endl;
 
     auto pre = DES::decrypt(res, key);
+
+    cout<<DES::toString(pre)<<endl;
 
 //    cout<<pre.size()<<endl;
 
@@ -106,13 +110,15 @@ void useFileDES(){
 };
 
 int main() {
-
 //    cout<< sizeof(uint64_t)<<endl;
 
-    testFileDES();
+//    testFileDES();
     testEncrypt();
 
 //    testIfstream();
+//    Ui_MainWindow ab;
+
+
 
 
     return 0;
