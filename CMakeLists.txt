@@ -14,15 +14,20 @@ project(DES)
 #set(CMAKE_AUTOUIC ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/Debug)
-
+set(DES_LIB "des_lib")
+set(DES_LIB_SOURCE src/DES.hpp src/fileDES.hpp src/empty.cpp src/empty.cpp)
 #查找qt的库
 #find_package( Qt5Core REQUIRED )
 #find_package( Qt5Widgets REQUIRED )
 #find_package( Qt5Gui REQUIRED )
 #find_package( Qt5UiTools REQUIRED )
 
-set(SOURCE_FILES test/main.cpp src/DES.hpp src/fileDES.hpp)
+set(SOURCE_FILES test/main.cpp)
+
+add_library(${DES_LIB} ${DES_LIB_SOURCE})
+
 add_executable(DES ${SOURCE_FILES})
 add_executable(qtDES ${SOURCE_FILES})
+target_link_libraries(DES ${DES_LIB})
 #
 #target_link_libraries(DES Qt5::Widgets Qt5::UiTools Qt5::Core)

@@ -136,6 +136,46 @@ DES/fast:
 	$(MAKE) -f CMakeFiles/DES.dir/build.make CMakeFiles/DES.dir/build
 .PHONY : DES/fast
 
+#=============================================================================
+# Target rules for targets named des_lib
+
+# Build rule for target.
+des_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 des_lib
+.PHONY : des_lib
+
+# fast build rule for target.
+des_lib/fast:
+	$(MAKE) -f CMakeFiles/des_lib.dir/build.make CMakeFiles/des_lib.dir/build
+.PHONY : des_lib/fast
+
+src/empty.o: src/empty.cpp.o
+
+.PHONY : src/empty.o
+
+# target to build an object file
+src/empty.cpp.o:
+	$(MAKE) -f CMakeFiles/des_lib.dir/build.make CMakeFiles/des_lib.dir/src/empty.cpp.o
+.PHONY : src/empty.cpp.o
+
+src/empty.i: src/empty.cpp.i
+
+.PHONY : src/empty.i
+
+# target to preprocess a source file
+src/empty.cpp.i:
+	$(MAKE) -f CMakeFiles/des_lib.dir/build.make CMakeFiles/des_lib.dir/src/empty.cpp.i
+.PHONY : src/empty.cpp.i
+
+src/empty.s: src/empty.cpp.s
+
+.PHONY : src/empty.s
+
+# target to generate assembly for a file
+src/empty.cpp.s:
+	$(MAKE) -f CMakeFiles/des_lib.dir/build.make CMakeFiles/des_lib.dir/src/empty.cpp.s
+.PHONY : src/empty.cpp.s
+
 test/main.o: test/main.cpp.o
 
 .PHONY : test/main.o
@@ -176,6 +216,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... qtDES"
 	@echo "... DES"
+	@echo "... des_lib"
+	@echo "... src/empty.o"
+	@echo "... src/empty.i"
+	@echo "... src/empty.s"
 	@echo "... test/main.o"
 	@echo "... test/main.i"
 	@echo "... test/main.s"

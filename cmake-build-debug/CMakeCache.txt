@@ -189,6 +189,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Value Computed by CMake
 DES_BINARY_DIR:STATIC=/Users/wangruoxuan/ClionProjects/DES/cmake-build-debug
 
+//Dependencies for target
+DES_LIB_DEPENDS:STATIC=
+
 //Value Computed by CMake
 DES_SOURCE_DIR:STATIC=/Users/wangruoxuan/ClionProjects/DES
 
@@ -206,6 +209,27 @@ Qt5UiTools_DIR:PATH=/usr/local/Cellar/qt5/5.6.1-1/lib/cmake/Qt5UiTools
 
 //The directory containing a CMake configuration file for Qt5Widgets.
 Qt5Widgets_DIR:PATH=/usr/local/Cellar/qt5/5.6.1-1/lib/cmake/Qt5Widgets
+
+//Dependencies for target
+STATIC_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+des.a_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+des_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+des_lib_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+desla_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+h_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+lib_LIB_DEPENDS:STATIC=
 
 
 ########################

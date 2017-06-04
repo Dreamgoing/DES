@@ -4,7 +4,7 @@
 
 #include <bitset>
 #include <cstdio>
-
+#include <fstream>
 using namespace std;
 
 //#define DEBUG_SHOW
@@ -113,12 +113,18 @@ int main() {
 //    cout<< sizeof(uint64_t)<<endl;
 
 //    testFileDES();
-    testEncrypt();
+//    testEncrypt();
 
 //    testIfstream();
 //    Ui_MainWindow ab;
 
-
+    fstream f;
+    f.open("/Users/wangruoxuan/hello.go");
+    char buf[30];
+    while (!f.eof()){
+        f.getline(buf,30);
+        cout<<buf<<endl;
+    }
 
 
     return 0;

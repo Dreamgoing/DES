@@ -2,3 +2,4 @@
 /Users/wangruoxuan/ClionProjects/DES/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/wangruoxuan/ClionProjects/DES/cmake-build-debug/CMakeFiles/qtDES.dir
 /Users/wangruoxuan/ClionProjects/DES/cmake-build-debug/CMakeFiles/DES.dir
+/Users/wangruoxuan/ClionProjects/DES/cmake-build-debug/CMakeFiles/des_lib.dir
