@@ -7,8 +7,10 @@
 
 #include <bitset>
 #include <iostream>
-
+#include "pcap.h"
 using namespace std;
+
+///@note 写静态类的时候，还是要分开写，include文件夹和src文件夹
 
 /**
  * @brief DES加密算法类，DES基于对称加密的算法
@@ -51,6 +53,8 @@ private:
     const static char bitTable[16];
 
 public:
+
+    ///@ok
 
 
     static bitset<SIZE::BLOCK> encrypt(const bitset<SIZE::BLOCK> &in, const bitset<SIZE::BLOCK> &key);

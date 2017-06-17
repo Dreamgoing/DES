@@ -90,6 +90,7 @@ DES_EXTERNAL_OBJECTS =
 
 ../Debug/DES: CMakeFiles/DES.dir/test/main.cpp.o
 ../Debug/DES: CMakeFiles/DES.dir/build.make
+../Debug/DES: libdes_lib.a
 ../Debug/DES: CMakeFiles/DES.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wangruoxuan/ClionProjects/DES/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../Debug/DES"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DES.dir/link.txt --verbose=$(VERBOSE)
