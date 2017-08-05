@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
 Debug/
+cmake-build-debug/
 cmake-build-debug/CMakeFiles/3.7.2/
 cmake-build-debug/CMakeFiles/CMakeTmp/
 cmake-build-debug/CMakeFiles/DES.dir/CXX.includecache
