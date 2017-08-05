@@ -571,11 +571,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501921489403</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="build static library">
+      <created>1501921543671</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1501921543671</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47448000" />
+    <option name="totallyTimeSpent" value="47469000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
