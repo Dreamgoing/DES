@@ -1,6 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
-.gitignore
 Debug/
 cmake-build-debug/CMakeFiles/3.7.2/
 cmake-build-debug/CMakeFiles/CMakeTmp/
