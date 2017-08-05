@@ -1,0 +1,22 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+.gitignore
+Debug/
+cmake-build-debug/CMakeFiles/3.7.2/
+cmake-build-debug/CMakeFiles/CMakeTmp/
+cmake-build-debug/CMakeFiles/DES.dir/CXX.includecache
+cmake-build-debug/CMakeFiles/DES.dir/DES_automoc.cpp.o
+cmake-build-debug/CMakeFiles/DES.dir/depend.internal
+cmake-build-debug/CMakeFiles/DES.dir/test/
+cmake-build-debug/CMakeFiles/DES_automoc.dir/
+cmake-build-debug/CMakeFiles/STATIC.dir/
+cmake-build-debug/CMakeFiles/des.a.dir/
+cmake-build-debug/CMakeFiles/des_lib.dir/
+cmake-build-debug/CMakeFiles/desla.dir/
+cmake-build-debug/CMakeFiles/h.dir/
+cmake-build-debug/CMakeFiles/lib.dir/
+cmake-build-debug/CMakeFiles/qtDES.dir/
+cmake-build-debug/CMakeFiles/qtDES_automoc.dir/
+cmake-build-debug/DES_automoc.cpp
+cmake-build-debug/libdes_lib.a
+cmake-build-debug/qtDES_automoc.cpp
