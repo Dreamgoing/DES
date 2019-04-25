@@ -7,7 +7,6 @@
 
 #include <bitset>
 #include <iostream>
-#include "pcap.h"
 using namespace std;
 
 ///@note 写静态类的时候，还是要分开写，include文件夹和src文件夹
